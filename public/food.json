@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "brandName": "Delicious Delights",
+      "brandImage": "https://i.ibb.co/NpmVSVV/ass10-1.jpg"
+    },
+    {
+      "id": 2,
+      "brandName": "Savor the Flavor",
+      "brandImage": "https://i.ibb.co/2KF8KwT/ass10-2.jpg"
+    },
+    {
+      "id": 3,
+      "brandName": "Tasty Treats",
+      "brandImage": "https://i.ibb.co/CsNHJx3/ass10-3.jpg"
+    },
+    {
+      "id": 4,
+      "brandName": "Gourmet Goodness",
+      "brandImage": "https://i.ibb.co/q9tNg0Y/ass10-4.jpg"
+    },
+    {
+      "id": 5,
+      "brandName": "Culinary Creations",
+      "brandImage": "https://i.ibb.co/hKdN9vs/ass10-5.jpg"
+    },
+    {
+      "id": 6,
+      "brandName": "Epicurean Eats",
+      "brandImage": "https://i.ibb.co/GWJxSsW/ass10-6.jpg"
+    }
+  ]
+  
