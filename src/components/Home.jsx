@@ -11,6 +11,7 @@ const Home = () => {
       <Navbar></Navbar>
       <Banner></Banner>
       <br />
+
       <div className="m-20">
         <h2 className="text-3xl text-center font-sans font-bold ">
           All Foods Collection
@@ -22,6 +23,7 @@ const Home = () => {
           ))}
         </div>
       </div>
+
       <Footer></Footer>
       <br />
       <hr />

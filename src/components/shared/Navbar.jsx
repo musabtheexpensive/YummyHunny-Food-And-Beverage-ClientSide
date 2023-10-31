@@ -1,15 +1,12 @@
-// import { Link, NavLink } from "react-router-dom";
-// import userDefaultPic from "../assets/user.png";
-// import { useContext } from "react";
-// import { AuthContext } from "../contexts/AuthContexts";
-
-import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../providers/AuthProvider";
 
 const Navbar = () => {
-    // const { user, logOut } = useContext(AuthContext);
-    // const handleSignOut = () => {
-    //   logOut().then().catch();
-    // };
+    const { user, logOut } = useContext(AuthContext);
+    const handleSignOut = () => {
+      logOut().then().catch();
+    };
     const navLinks = (
         <>
           <li>
@@ -19,7 +16,7 @@ const Navbar = () => {
             <NavLink to="/addProduct">Add Product</NavLink>
           </li>
           <li>
-            <NavLink to="/career">My Cart</NavLink>
+            <NavLink to="/myCart">My Cart</NavLink>
           </li>
           <li>
             <NavLink to="/login">Login</NavLink>
@@ -67,11 +64,11 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
         </div>
-        {/* <div className="navbar-end">
+        <div className="navbar-end">
           <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-            <div className="w-10 rounded-full">
-              <img src={userDefaultPic} />
-            </div>
+            {/* <div className="w-10 rounded-full">
+              <img src='' />
+            </div> */}
           </label>
           {user ? (
             <button onClick={handleSignOut} className="btn">
@@ -82,7 +79,7 @@ const Navbar = () => {
               <button className="btn">LogIn</button>
             </Link>
           )}
-        </div> */}
+        </div>
       </div>
     );
 };
