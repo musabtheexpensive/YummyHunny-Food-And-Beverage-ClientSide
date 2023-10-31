@@ -1,4 +1,6 @@
 import Swal from 'sweetalert2'
+import Navbar from './shared/Navbar';
+import Footer from './Footer';
 const AddProduct = () => {
   const handleAddFood = (event) => {
     event.preventDefault();
@@ -34,7 +36,7 @@ const AddProduct = () => {
           if (data.insertedId) {
             Swal.fire({
               title: "Success!",
-              text: "Food Added Successfully",
+              text: "Coffee Added Successfully",
               icon: "success",
               confirmButtonText: "Cool",
             });
@@ -42,7 +44,9 @@ const AddProduct = () => {
         });
   };
   return (
-    <div className="bg-[#abd2d2] p-24">
+  <div>
+    <Navbar></Navbar>
+      <div className="bg-[#abd2d2] p-24">
       <h2 className="text-3xl font-extrabold">
         Add Your Favorite Specific Food
       </h2>
@@ -157,6 +161,9 @@ const AddProduct = () => {
         />
       </form>
     </div>
+    <hr />
+    <Footer></Footer>
+  </div>
   );
 };
 
