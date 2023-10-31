@@ -16,12 +16,12 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch("http://localhost:5000/food"),
+        loader: () => fetch(" https://assignment10-foodandbevarage-serverside-lrn6wtvcr.vercel.app/food"),
       },
       {
         path: "/food",
         element: <PrivateRoutes><Food></Food></PrivateRoutes>,
-        loader: () => fetch("http://localhost:5000/food"),
+        loader: () => fetch(" https://assignment10-foodandbevarage-serverside-lrn6wtvcr.vercel.app/food"),
       },
       {
         path: "/addProduct",

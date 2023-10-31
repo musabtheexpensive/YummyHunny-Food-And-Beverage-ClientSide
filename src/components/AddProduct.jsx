@@ -23,7 +23,7 @@ const AddProduct = () => {
     };
     console.log(newFood);
     // send data to the server
-    fetch("http://localhost:5000/food", {
+    fetch(" https://assignment10-foodandbevarage-serverside-lrn6wtvcr.vercel.app/food", {
         method: "POST",
         headers: {
           "content-type": "application/json",
