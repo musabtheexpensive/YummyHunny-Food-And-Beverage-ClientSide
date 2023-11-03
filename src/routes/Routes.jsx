@@ -19,7 +19,7 @@ const router = createBrowserRouter([
         loader: () => fetch(" https://assignment10-foodandbevarage-serverside-lrn6wtvcr.vercel.app/food"),
       },
       {
-        path: "/food",
+        path: "/food/:id",
         element: <PrivateRoutes><Food></Food></PrivateRoutes>,
         loader: () => fetch(" https://assignment10-foodandbevarage-serverside-lrn6wtvcr.vercel.app/food"),
       },
